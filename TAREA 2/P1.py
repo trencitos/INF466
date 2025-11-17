@@ -48,10 +48,11 @@ def longest_complement_palindromes(seq, top_k=10):
     return final
 
 # -------------main-------------
-record = SeqIO.read("sequence.fasta", "fasta")
+record = SeqIO.read("sequence.fasta", "fasta") # lee archivo fasta
 seq = str(record.seq)
 
 results = longest_complement_palindromes(seq, top_k=10)
 for r in results:
     print(r)
+
 
